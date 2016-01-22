@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Animacion",
+  "ProjectGuid": "4e553d9a-183c-4cba-b941-2262b0663a5a",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Animacion",
+  "DisplayName": "Animacion",
+  "Author": "",
+  "Description": "Animacion",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{7472dffd-bfa2-43ab-9464-7f08e8b8eb84}",
+  "WP8ProductID": "{3009a35c-24a3-4f01-8d1b-4f8a8a61b836}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Animacion",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
