@@ -1,7 +1,47 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
 
-    <!-- START_CUSTOM_CODE_home -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_home -->
+       <div class="contenedor">
+<div class="titulo">
+	<div id="contenidos">
+        	<div id="columnasup1">Normas de seguridad para la prevención de incendios</div>
+       		<div id="columnasup2"></div>
+            <div id="columnasup3"></div>
+   		 </div>  
+</div>
+	<div class="contenido">
+    <object type="text/html" data="http://kimbayamultimedios.com/ejemplos/incendios/01/01.html" width="100%" height="100%"> </object>
+    </div>
+	<div class="menu">
+    	<div id="contenidos">
+        	<div id="columna1"><div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Menu</button>
+						<ul class="dl-menu">
+							<li>
+								<a href="04.html">4. Medidas para evacuación de emergencia.</a>								
+							</li>
+							<li>
+								<a href="03.html">3. Respuesta y Evacuación de emergencia.</a>								
+							</li>
+							<li>
+								<a href="02.html">2. Objetivos</a>								
+							</li>
+							<li>
+								<a href="#">1. Introducción</a>								
+							</li>
+						</ul>
+					</div></div>
+       		<div id="columna2">Pantalla 1/4</div>
+           <div id="columna4"></div>
+            <div id="columna3"></div>
+            <a href="02.html"><div id="columna5"></div></a>
+   		 </div>   		
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://kimbayamultimedios.com/ejemplos/incendios/js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+		</script>
 </div>

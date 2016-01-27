@@ -3,50 +3,85 @@
 
 <head>
     <title></title>
-    <meta charset="utf-8">
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="kendo/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.mobile.all.min.css" />
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    <script src="app.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+        .iframe{
+            margin: auto;
+            width: 100%;
+        }
+        .anima{
+            border: 0;
+            width: 100%;
+            height: 573px
+        }
+        height
+    </style>
+    <script src="http://debug-software.intel.com/target/target-script-min.js#fFPfcXEusOq3QlQCyt-4NDJWIT2gONY1SgSqIe83d94"></script>
 </head>
+<body>
+    <div data-role="view" id="drawer-home" data-layout="drawer-layout" data-title="Clase 1" data-use-native-scrolling="true">
+        <div class="iframe">
+            <iframe class="anima" src="http://54.213.238.161/app/01/01.html"> </iframe>
+        </div>
+        
+    </div>
+    
+    <div data-role="view" id="drawer-starred" data-layout="drawer-layout" data-title="Clase 2" data-use-native-scrolling="true">
+        <div class="iframe">
+            <iframe class="anima" src="http://54.213.238.161/app/02/02.html"> </iframe>
+        </div>
+    </div>
+    
+    <div data-role="view" id="drawer-drafts" data-layout="drawer-layout" data-title="Clase 3" data-use-native-scrolling="true">
+        <div class="iframe">
+            <iframe class="anima" src="http://54.213.238.161/app/03/03.html"> </iframe>
+        </div>
+    </div>
+    
+    <div data-role="view" id="drawer-sent" data-layout="drawer-layout" data-title="Prueba" data-use-native-scrolling="true">
+        <div class="iframe">
+            <iframe class="anima" src="http://54.213.238.161/app/04/04.htm"> </iframe>
+        </div>
+    </div>
+    
+    
+    <div data-role="drawer" id="my-drawer" style="width: 20em" data-use-native-scrolling="true">
 
-<body id="kendoUiMobileApp">
-    <script src="components/home/index.js"></script>
-    <div data-role="layout" data-id="main">
+        <ul data-role="listview" class="km-listview-icons">
+            <li data-icon="downloads"><a href="drawer/index" data-transition="none">Introducción</a>
+            </li>
+            <li data-icon="favorites"><a href="#drawer-starred" data-transition="none">Objetivos</a>
+            </li>
+            <li data-icon="edit"><a href="#drawer-drafts" data-transition="none">Respuesta y Evacuación de emergencia</a>
+            </li>
+            <li data-icon="reply"><a href="#drawer-sent" data-transition="none">Medidas para evacuación de emergencia</a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="layout" data-id="drawer-layout" data-show="showDemoLayout">
         <header data-role="header">
             <div data-role="navbar">
+                <a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="drawer-icon" data-align="left"></a>
                 <span data-role="view-title"></span>
+                <a data-align="right" data-role="button" class="nav-button" data-icon="home" href="#/"></a>
             </div>
         </header>
-
-        <!-- application views will be rendered here -->
-
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home View</a>
-            </div>
-        </footer>
     </div>
-
-    <div data-role="layout" data-id="main-nonav">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
-        </header>
-
-        <!-- application views will be rendered here -->
-
-        <footer data-role="footer">
-        </footer>
-    </div>
-    <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
+    <script>
+        // reset global drawer instance, for demo purposes
+        kendo.mobile.ui.Drawer.current = null;
+    </script>
+    <script>
+        var app = new kendo.mobile.Application(document.body, {
+            skin: "nova"
+        });
+    </script>
 </body>
 
 </html>
