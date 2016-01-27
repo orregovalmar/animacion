@@ -2,7 +2,7 @@
   "ProjectName": "Animacion",
   "ProjectGuid": "4e553d9a-183c-4cba-b941-2262b0663a5a",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.Animacion",
+  "AppIdentifier": "com.valmar.Animacion",
   "DisplayName": "Animacion",
   "Author": "",
   "Description": "Animacion",
@@ -19,6 +19,7 @@
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
+    "Portrait",
     "Landscape"
   ],
   "AndroidHardwareAcceleration": "false",
@@ -40,5 +41,11 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.device",
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.media",
+    "org.apache.cordova.network-information"
   ]
 }
