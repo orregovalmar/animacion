@@ -3,9 +3,9 @@
   "ProjectGuid": "4e553d9a-183c-4cba-b941-2262b0663a5a",
   "projectVersion": 1,
   "AppIdentifier": "com.valmar.Animacion",
-  "DisplayName": "Animacion",
-  "Author": "",
-  "Description": "Animacion",
+  "DisplayName": "E-learning Valmar",
+  "Author": "Valmar Group",
+  "Description": "Aplicación demo de cursos en línea",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -16,6 +16,7 @@
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.8.0",
   "AndroidPermissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
@@ -43,9 +44,7 @@
     "ID_RESOLUTION_HD720P"
   ],
   "CorePlugins": [
-    "org.apache.cordova.device",
-    "org.apache.cordova.device-orientation",
-    "org.apache.cordova.media",
+    "com.phonegap.plugins.barcodescanner@2.0.0",
     "org.apache.cordova.network-information"
   ]
 }
