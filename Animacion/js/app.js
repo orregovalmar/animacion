@@ -29,7 +29,7 @@
     alert( "Evento" );
     console.log('hola');
 }, false);*/
-var url='http://54.213.238.161/app/';
+var url='http://54.191.211.214/elearning/'; 
 
 function clase(num,tit){
 	var iframe='<iframe class="anima" src="'+url+num+'"> </iframe>';
